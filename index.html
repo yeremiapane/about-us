@@ -41,7 +41,7 @@
         font-size : 90px;
         text-transform: uppercase;
         letter-spacing: 1,5px;
-        color: #eb6234;
+        color: #0f0f0e;
         font-family: Freight Neo;
     }
 
@@ -173,12 +173,39 @@
         color: #000000;
     }
 
-    .teams .koran section {
-        width:100%;
-        padding:2%;
-        display:flex;
-        justify-content:space-between;
-    }
+    .koran{
+	/*jumlah column*/
+	-webkit-column-count: 3; /* support Chrome, Safari, Opera */
+	-moz-column-count: 3; /* support Firefox */
+	column-count : 3;
+ 
+	/*lebar column*/
+	-webkit-column-width: 100px; /* support Chrome, Safari, Opera */
+	-moz-column-width: 100px; /* support Firefox */
+	column-width :100px;
+ 
+	/*jarak column dengan column yang lain*/
+	-webkit-column-gap : 40px;
+	-moz-column-gap : 40px;
+	column-gap : 40px;	
+	
+	/*ketebalan garis*/
+	-webkit-column-rule-width : 1px;
+	-moz-column-rule-width : 1px;
+	column-rule-width : 1px;	
+ 
+	/* pengaturan garis dengan format nilai jenis_garis warna
+	-webkit-column-rule : 1px solid blue;
+	-moz-column-rule : 1px solid blue;
+	column-rule : 1px solid blue; */
+ 
+	/*mengatur span column*/
+	-webkit-column-span :all;
+	-moz-column-span :all;
+	column-span :all;	
+    margin : 50px 5%;
+    text-align : justify;	
+}
 
 </style>
 <body>
@@ -324,14 +351,14 @@
         <h2>  Development Professionals </h2>
 
         <div class="koran">
-            <section>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste dolores quis, 
-                    impedit hic beatae ullam debitis voluptate iure exercitationem dicta aspernatur possimus eligendi autem, 
-                    illum ab provident quam sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, vel aspernatur,
-                    animi rerum dicta doloremque harum dolor ipsam tenetur beatae placeat at, minus ab quia? Non illum beatae obcaecati 
-                    porro.
-                </p>
-            </section>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste dolores quis, 
+                impedit hic beatae ullam debitis voluptate iure exercitationem dicta aspernatur possimus eligendi autem, 
+                illum ab provident quam sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, vel aspernatur,
+                animi rerum dicta doloremque harum dolor ipsam tenetur beatae placeat at, minus ab quia? Non illum beatae obcaecati 
+                porro.lorem lorem ipsum dolor sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Molestiae quos at saepe praesentium sit aliquam dolore hic provident deserunt, necessitatibus asperiores tempore maxime 
+                quisquam laborum vitae magni? Necessitatibus, odit optio.
+            </p>
         </div>
         
         <img src="teams.png" alt="">
